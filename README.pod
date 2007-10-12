@@ -1,0 +1,46 @@
+=pod
+
+=head1 NAME
+
+geocache - Geocoding proxy
+
+=head1 SYNOPSIS
+
+  geocache [-d database] [-k key_file] [-p port] [-t timeout] [-P pid_file]
+           [-K] [-S] [-D]
+           [-v] [-h]
+
+=head1 DESCRIPTION
+
+B<Geocache> is a standalone proxy server storing geocoding results
+from Google Maps. This may save some of the daily quota of geocoding
+requests to Google Maps. B<Geocache> itself is merely a proxy. It does
+not perform any geocoding algorithms.
+
+=head1 OPTIONS
+
+=head4 -d    Specify the name of cache database (Default: /var/lib/geocache/geocache.db)
+
+=head4 -k    Specify the API key file (Default: /etc/geocache/google.key)
+
+=head4 -p    Specify the port (Default: 1732)
+
+=head4 -P    Specify the pid file (Default: /var/run/geocache.pid)
+
+=head4 -t    Specify the timeout value (Default: 5 secs)
+
+=head4 -K    Kill the running geocache
+
+=head4 -S    Sync database
+
+=head4 -D    Run as a daemon
+
+=head4 -v    Display version
+
+=head4 -h    Display help message
+
+=head1 AUTHOR
+
+Yung-chung Lin (henearkrxern@gmail.com)
+
+=cut
