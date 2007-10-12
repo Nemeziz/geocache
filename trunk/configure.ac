@@ -15,7 +15,7 @@ AC_CHECK_HEADERS([sys/select.h])
 AC_CHECK_HEADERS([db.h])
 
 # Checks for library functions.
-AC_CHECK_FUNCS([gethostbyname_r socket])
+AC_CHECK_FUNCS([gethostbyname socket])
 
 CFLAGS="-Wall -O3"
 #CFLAGS="-Wall -g -dH -O0"
