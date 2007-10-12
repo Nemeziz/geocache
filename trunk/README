@@ -1,0 +1,28 @@
+NAME
+    geocache - Geocoding proxy
+
+SYNOPSIS
+      geocache [-d database] [-k key_file] [-p port] [-t timeout] [-P pid_file]
+               [-K] [-S] [-D]
+               [-v] [-h]
+
+DESCRIPTION
+    Geocache is a standalone proxy server storing geocoding results from
+    Google Maps. This may save some of the daily quota of geocoding requests
+    to Google Maps. Geocache itself is merely a proxy. It does not perform
+    any geocoding algorithms.
+
+OPTIONS
+   -d    Specify the name of cache database (Default: /var/lib/geocache/geocache.db)
+   -k    Specify the API key file (Default: /etc/geocache/google.key)
+   -p    Specify the port (Default: 1732)
+   -P    Specify the pid file (Default: /var/run/geocache.pid)
+   -t    Specify the timeout value (Default: 5 secs)
+   -K    Kill the running geocache
+   -S    Sync database
+   -D    Run as a daemon
+   -v    Display version
+   -h    Display help message
+AUTHOR
+    Yung-chung Lin (henearkrxern@gmail.com)
+
